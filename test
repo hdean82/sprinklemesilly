@@ -1,0 +1,1832 @@
+<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.26110" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.26110" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.26110" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/imageinfo.js?v=3.3.26110" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/file-uploader/fileuploader.js?v=3.3.26110"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/autoFill.min.js?v=3.3.26110" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.26110" type="text/javascript"></script>
+<script src="https://js.jotform.com/vendor/postMessage.js?3.3.26110" type="text/javascript"></script>
+<script src="https://js.jotform.com/WidgetsServer.js?v=1624897338078" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.setConditions([{"action":[{"id":"action_1612327288954","visibility":"ShowMultiple","isError":false,"fields":["172","171"]}],"id":"1612327308560","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1612327288954","field":"170","operator":"equals","value":"Delivery","isError":false}],"type":"field"},{"action":[{"id":"action_1612327234273","visibility":"HideMultiple","isError":false,"fields":["172","171"]}],"id":"1612327272879","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1612327234273","field":"170","operator":"equals","value":"Pickup","isError":false}],"type":"field"}]);
+	JotForm.init(function(){
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("22", false, {"days":{"monday":false,"tuesday":false,"wednesday":false,"thursday":false,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":["2021-04-01>2021-07-02","2021-07-06>2021-07-22","","","",""],"start":"","end":""}); }, 0); });
+ } 
+ JotForm.setCalendar("22", false, {"days":{"monday":false,"tuesday":false,"wednesday":false,"thursday":false,"friday":true,"saturday":true,"sunday":true},"future":true,"past":false,"custom":false,"ranges":["2021-04-01>2021-07-02","2021-07-06>2021-07-22","","","",""],"start":"","end":""});
+ JotForm.displayLocalTime("hour_22", "min_22", "ampm_22", null, true);
+      JotForm.description('input_30', 'We first like to obtain as much information as possible prior to making calls. Therefore, we may contact you via email or text in order to ask additional questions. Please let us know which is more convenient for you');
+      JotForm.setPhoneMaskingValidator( 'input_7_full', '###-###-####' );
+     $('input_8_confirm').hint('Please retype your email.');
+     $$('#input_8_confirm')[0].setAttribute('onPaste', 'return false;');
+      setTimeout(function() {
+          $('input_8').hint('ex: myname@example.com');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_168').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_24').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_31').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_20').setAttribute('tabindex',0);
+      JotForm.setCustomHint( 'input_20', 'Share your ideas with me. Theme, colors, ideas etc. Be as descriptive as possible!' );
+      JotForm.description('input_20', 'We love to know about colors, characters and overall any ideas you might have. If you are ordering cupcakes, cookies or cake pops, please leave those details here.');
+if (window.JotForm && JotForm.accessible) $('input_174').setAttribute('tabindex',0);
+      JotForm.setCustomHint( 'input_174', 'Do you know what cake flavor combination you would like? If you don\'t, head over to our Flavor Shop via the website to browse options.' );
+if (window.JotForm && JotForm.accessible) $('input_173').setAttribute('tabindex',0);
+	JotForm.newDefaultTheme = false;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+      setTimeout(function() {
+          JotForm.initMultipleUploads();
+      }, 2);
+          JotForm.isNewSaveAndContinueLaterActive = true;
+    /*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,null,null,{"name":"onlineBooking3","qid":"3","text":"Online Booking and Inquiries","type":"control_head"},{"name":"clickTo4","qid":"4","text":"PLEASE READ BEFORE PROCEEDING\nI am a home baker with a licensed and insured private custom cake studio. I do not permit any clients in the studio due to health precautions, therefore all orders are completed via email, calls or text. When picking up your order, we supply curbside. The address will be listed on your invoice for convenience. \n \n\nI am a CAKE decorator and specialize in custom cakes. If you wish to order additional items, you must purchase a cake. For example, I will not be able to accommodate ONLY cupcake orders without a cake purchase.  \n\n\nIf you are purchasing a cake from another vendor and wish to purchase other edibles from Sprinkle Me Silly, that will not be permitted. Due to insurance and health issues or other problems that could arise, SMS prefers to not mix vendors.\n\n\nWhen inquiring about pricing, I do have a minimum of $165  that must be met in order for me to schedule the order. \n\n\nI no longer offer cookies, but will gladly give you a referral. \n\n\nWe generally need a 2 week notice for most orders, however we do try and accommodate those last minute orders if possible.\n\n","type":"control_text"},{"name":"yourName","qid":"5","text":"Your Name","type":"control_fullname"},null,{"name":"phoneNumber7","qid":"7","text":"Phone Number","type":"control_phone"},{"name":"Email","qid":"8","subLabel":"Do not use .EDU or .GOV email addresses. Only general emails such as gmail, yahoo, aol, etc. ","text":"E-mail Address","type":"control_email"},null,null,null,{"name":"clickTo12","qid":"12","text":"Event Information\n","type":"control_text"},null,null,null,null,null,null,null,{"description":"We love to know about colors, characters and overall any ideas you might have. If you are ordering cupcakes, cookies or cake pops, please leave those details here.","name":"OrderNotes","qid":"20","subLabel":"Please be precise with colors IE: dark blue, light blue, Teal, etc. you can also upload swatch examples.","text":"Order Notes","type":"control_textarea"},null,{"description":"","name":"requestedPickupdelivery","qid":"22","text":"Requested pickup\u002Fdelivery date & time","type":"control_datetime"},{"description":"","name":"EventType","qid":"23","subLabel":"","text":"Event Type","type":"control_dropdown"},{"description":"","name":"Theme","qid":"24","subLabel":"","text":"Theme","type":"control_textbox"},{"description":"","name":"Servings","qid":"25","subLabel":"This number does not have to be the exact amount. ","text":"Servings","type":"control_number"},{"description":"","name":"Budget","qid":"26","subLabel":"$165 minimum.","text":"Budget","type":"control_number"},{"description":"","name":"input27","qid":"27","subLabel":"Please share any images pertaining to the design you are looking for.","text":"Upload Images","type":"control_fileupload"},null,null,{"description":"We first like to obtain as much information as possible prior to making calls. Therefore, we may contact you via email or text in order to ask additional questions. Please let us know which is more convenient for you","name":"CommunicationPreference","qid":"30","text":"What is your preference of communication?","type":"control_radio"},{"description":"","name":"GalleryIDNumber","qid":"31","subLabel":"Instead  of uploading an image, you can easily reference an item you are most  interested in via our Gallery by listing the ID number located on the  picture by hovering or clicking the image.","text":"Gallery ID Number","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"input158","qid":"158","text":"We appreciate you taking the time to complete our online inquiry form and we look forward to working with you!\n Make sure to follow us on Facebook, Twitter and Instagram!","type":"control_text"},{"name":"input159","qid":"159","text":"","type":"control_widget"},{"name":"submit160","qid":"160","text":"Submit","type":"control_button"},null,null,{"name":"YourInformation","qid":"163","text":"Page Break","type":"control_pagebreak"},{"name":"input164","qid":"164","text":"Check to see if your date is available. Whichever date\u002Ftime you choose for PICKUP, please note that we expect you to be on time. If you do not show up at the time chosen, you may forfeit your cake AND all monies.\n \n** If the date is grayed out or not selectable, the date sadly is not available and I am fully booked. I do not take orders for weekdays, weekends only** ","type":"control_text"},{"name":"divider","qid":"165","type":"control_divider"},{"name":"divider166","qid":"166","type":"control_divider"},{"description":"","name":"howDid","qid":"167","subLabel":"","text":"How did you hear about us?","type":"control_dropdown"},{"description":"","name":"typeA","qid":"168","subLabel":"","text":"If you selected friend or other, please let us know the source!","type":"control_textbox"},{"name":"divider169","qid":"169","type":"control_divider"},{"description":"","name":"pickupOr","qid":"170","subLabel":"Delivery is $35 within Memphis city limits. For weddings, the fee will differ per location and preferences.","text":"Pickup or Delivery?","type":"control_dropdown"},{"description":"","name":"deliveryAddress","qid":"171","text":"Delivery Address","type":"control_address"},{"description":"","name":"isThis172","qid":"172","subLabel":"","text":"Is this a house or business?","type":"control_dropdown"},{"description":"","name":"DiscountCode","qid":"173","subLabel":"","text":"If you have a discount code, please enter it below.","type":"control_textbox"},{"description":"","name":"CakeFlavors","qid":"174","subLabel":"","text":"Cake Flavors","type":"control_textarea"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,null,null,{"name":"onlineBooking3","qid":"3","text":"Online Booking and Inquiries","type":"control_head"},{"name":"clickTo4","qid":"4","text":"PLEASE READ BEFORE PROCEEDING\nI am a home baker with a licensed and insured private custom cake studio. I do not permit any clients in the studio due to health precautions, therefore all orders are completed via email, calls or text. When picking up your order, we supply curbside. The address will be listed on your invoice for convenience. \n \n\nI am a CAKE decorator and specialize in custom cakes. If you wish to order additional items, you must purchase a cake. For example, I will not be able to accommodate ONLY cupcake orders without a cake purchase.  \n\n\nIf you are purchasing a cake from another vendor and wish to purchase other edibles from Sprinkle Me Silly, that will not be permitted. Due to insurance and health issues or other problems that could arise, SMS prefers to not mix vendors.\n\n\nWhen inquiring about pricing, I do have a minimum of $165  that must be met in order for me to schedule the order. \n\n\nI no longer offer cookies, but will gladly give you a referral. \n\n\nWe generally need a 2 week notice for most orders, however we do try and accommodate those last minute orders if possible.\n\n","type":"control_text"},{"name":"yourName","qid":"5","text":"Your Name","type":"control_fullname"},null,{"name":"phoneNumber7","qid":"7","text":"Phone Number","type":"control_phone"},{"name":"Email","qid":"8","subLabel":"Do not use .EDU or .GOV email addresses. Only general emails such as gmail, yahoo, aol, etc. ","text":"E-mail Address","type":"control_email"},null,null,null,{"name":"clickTo12","qid":"12","text":"Event Information\n","type":"control_text"},null,null,null,null,null,null,null,{"description":"We love to know about colors, characters and overall any ideas you might have. If you are ordering cupcakes, cookies or cake pops, please leave those details here.","name":"OrderNotes","qid":"20","subLabel":"Please be precise with colors IE: dark blue, light blue, Teal, etc. you can also upload swatch examples.","text":"Order Notes","type":"control_textarea"},null,{"description":"","name":"requestedPickupdelivery","qid":"22","text":"Requested pickup\u002Fdelivery date & time","type":"control_datetime"},{"description":"","name":"EventType","qid":"23","subLabel":"","text":"Event Type","type":"control_dropdown"},{"description":"","name":"Theme","qid":"24","subLabel":"","text":"Theme","type":"control_textbox"},{"description":"","name":"Servings","qid":"25","subLabel":"This number does not have to be the exact amount. ","text":"Servings","type":"control_number"},{"description":"","name":"Budget","qid":"26","subLabel":"$165 minimum.","text":"Budget","type":"control_number"},{"description":"","name":"input27","qid":"27","subLabel":"Please share any images pertaining to the design you are looking for.","text":"Upload Images","type":"control_fileupload"},null,null,{"description":"We first like to obtain as much information as possible prior to making calls. Therefore, we may contact you via email or text in order to ask additional questions. Please let us know which is more convenient for you","name":"CommunicationPreference","qid":"30","text":"What is your preference of communication?","type":"control_radio"},{"description":"","name":"GalleryIDNumber","qid":"31","subLabel":"Instead  of uploading an image, you can easily reference an item you are most  interested in via our Gallery by listing the ID number located on the  picture by hovering or clicking the image.","text":"Gallery ID Number","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"input158","qid":"158","text":"We appreciate you taking the time to complete our online inquiry form and we look forward to working with you!\n Make sure to follow us on Facebook, Twitter and Instagram!","type":"control_text"},{"name":"input159","qid":"159","text":"","type":"control_widget"},{"name":"submit160","qid":"160","text":"Submit","type":"control_button"},null,null,{"name":"YourInformation","qid":"163","text":"Page Break","type":"control_pagebreak"},{"name":"input164","qid":"164","text":"Check to see if your date is available. Whichever date\u002Ftime you choose for PICKUP, please note that we expect you to be on time. If you do not show up at the time chosen, you may forfeit your cake AND all monies.\n \n** If the date is grayed out or not selectable, the date sadly is not available and I am fully booked. I do not take orders for weekdays, weekends only** ","type":"control_text"},{"name":"divider","qid":"165","type":"control_divider"},{"name":"divider166","qid":"166","type":"control_divider"},{"description":"","name":"howDid","qid":"167","subLabel":"","text":"How did you hear about us?","type":"control_dropdown"},{"description":"","name":"typeA","qid":"168","subLabel":"","text":"If you selected friend or other, please let us know the source!","type":"control_textbox"},{"name":"divider169","qid":"169","type":"control_divider"},{"description":"","name":"pickupOr","qid":"170","subLabel":"Delivery is $35 within Memphis city limits. For weddings, the fee will differ per location and preferences.","text":"Pickup or Delivery?","type":"control_dropdown"},{"description":"","name":"deliveryAddress","qid":"171","text":"Delivery Address","type":"control_address"},{"description":"","name":"isThis172","qid":"172","subLabel":"","text":"Is this a house or business?","type":"control_dropdown"},{"description":"","name":"DiscountCode","qid":"173","subLabel":"","text":"If you have a discount code, please enter it below.","type":"control_textbox"},{"description":"","name":"CakeFlavors","qid":"174","subLabel":"","text":"Cake Flavors","type":"control_textarea"}]);}, 20); 
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.26110" rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.26110" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.26110" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5dca5ac9a5e86d17235d90c1"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.26110" />
+<style type="text/css">
+@import '//fonts.googleapis.com/css?family=Cabin:light,lightitalic,normal,italic,bold,bolditalic';
+
+    .form-label-left{
+        width:80px;
+    }
+    .form-line{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .form-label-right{
+        width:80px;
+    }
+    .form-all{
+        width:800px;
+        color:#4a4a4a !important;
+        font-family:'Oswald';
+        font-size:14px;
+    }
+    .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+        color: false;
+    }
+
+</style>
+
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+@import "https://fonts.googleapis.com/css?family=Oswald:light,lightitalic,normal,italic,bold,bolditalic";
+.form-all:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-all {
+  font-family: "Oswald", sans-serif;
+}
+.form-all {
+  width: 800px;
+}
+.form-label-left,
+.form-label-right {
+  width: 152px;
+}
+.form-label {
+  white-space: normal;
+}
+.form-label.form-label-auto {
+  display: block;
+  float: none;
+  word-break: break-word;
+  text-align: left;
+}
+.form-label-left {
+  display: inline-block;
+  white-space: normal;
+  float: left;
+  text-align: left;
+}
+.form-label-right {
+  display: inline-block;
+  white-space: normal;
+  float: left;
+  text-align: right;
+}
+.form-label-top {
+  white-space: normal;
+  display: block;
+  float: none;
+  text-align: left;
+}
+.form-radio-item label:before {
+  top: 0;
+}
+.form-all {
+  font-size: 14px;
+}
+.form-label {
+  font-weight: bold;
+}
+.form-checkbox-item label,
+.form-radio-item label {
+  font-weight: normal;
+}
+.supernova {
+  background-color: rgba(255, 255, 255, 0.49);
+  background-color: #f5f5f5;
+}
+.supernova body {
+  background-color: transparent;
+}
+/*
+@width30: (unit(@formWidth, px) + 60px);
+@width60: (unit(@formWidth, px)+ 120px);
+@width90: (unit(@formWidth, px)+ 180px);
+*/
+/* | */
+@media screen and (min-width: 480px) {
+  .supernova .form-all {
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  }
+}
+/* | */
+/* | */
+@media screen and (max-width: 480px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 480px) and (max-width: 799px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+/* | */
+@media screen and (min-width: 768px) {
+  .jotform-form {
+    padding: 60px 0;
+  }
+}
+/* | */
+/* | */
+@media screen and (max-width: 799px) {
+  .jotform-form .form-all {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* | */
+.supernova .form-all,
+.form-all {
+  background-color: rgba(255, 255, 255, 0.49);
+  border: 1px solid transparent;
+}
+.form-header-group {
+  border-color: rgba(230, 230, 230, 0.49);
+}
+.form-matrix-table tr {
+  border-color: rgba(230, 230, 230, 0.49);
+}
+.form-matrix-table tr:nth-child(2n) {
+  background-color: rgba(242, 242, 242, 0.49);
+}
+.form-all {
+  color: #4a4a4a;
+}
+.form-header-group .form-header {
+  color: #4a4a4a;
+}
+.form-header-group .form-subHeader {
+  color: #646464;
+}
+.form-sub-label {
+  color: #646464;
+}
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html {
+  color: #e1537d;
+}
+.form-checkbox-item label,
+.form-radio-item label {
+  color: #e97e9e;
+}
+.form-line.form-line-active {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: rgba(255, 232, 241, 0.74);
+}
+/* omer */
+.form-radio-item,
+.form-checkbox-item {
+  padding-bottom: 0px !important;
+}
+.form-radio-item:last-child,
+.form-checkbox-item:last-child {
+  padding-bottom: 0;
+}
+/* omer */
+[data-type="control_radio"] .form-input,
+[data-type="control_checkbox"] .form-input,
+[data-type="control_radio"] .form-input-wide,
+[data-type="control_checkbox"] .form-input-wide {
+  width: 100%;
+  max-width: 372px;
+}
+.form-radio-item,
+.form-checkbox-item {
+  width: 100%;
+  max-width: 372px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-textbox.form-radio-other-input,
+.form-textbox.form-checkbox-other-input {
+  width: 80%;
+  margin-left: 3%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-multiple-column {
+  width: 100%;
+}
+.form-multiple-column .form-radio-item,
+.form-multiple-column .form-checkbox-item {
+  width: 10%;
+}
+.form-multiple-column[data-columncount="1"] .form-radio-item,
+.form-multiple-column[data-columncount="1"] .form-checkbox-item {
+  width: 100%;
+}
+.form-multiple-column[data-columncount="2"] .form-radio-item,
+.form-multiple-column[data-columncount="2"] .form-checkbox-item {
+  width: 50%;
+}
+.form-multiple-column[data-columncount="3"] .form-radio-item,
+.form-multiple-column[data-columncount="3"] .form-checkbox-item {
+  width: 33.33333333%;
+}
+.form-multiple-column[data-columncount="4"] .form-radio-item,
+.form-multiple-column[data-columncount="4"] .form-checkbox-item {
+  width: 25%;
+}
+.form-multiple-column[data-columncount="5"] .form-radio-item,
+.form-multiple-column[data-columncount="5"] .form-checkbox-item {
+  width: 20%;
+}
+.form-multiple-column[data-columncount="6"] .form-radio-item,
+.form-multiple-column[data-columncount="6"] .form-checkbox-item {
+  width: 16.66666667%;
+}
+.form-multiple-column[data-columncount="7"] .form-radio-item,
+.form-multiple-column[data-columncount="7"] .form-checkbox-item {
+  width: 14.28571429%;
+}
+.form-multiple-column[data-columncount="8"] .form-radio-item,
+.form-multiple-column[data-columncount="8"] .form-checkbox-item {
+  width: 12.5%;
+}
+.form-multiple-column[data-columncount="9"] .form-radio-item,
+.form-multiple-column[data-columncount="9"] .form-checkbox-item {
+  width: 11.11111111%;
+}
+.form-single-column .form-checkbox-item,
+.form-single-column .form-radio-item {
+  width: 100%;
+}
+.form-checkbox-item .editor-container div,
+.form-radio-item .editor-container div {
+  position: relative;
+}
+.form-checkbox-item .editor-container div:before,
+.form-radio-item .editor-container div:before {
+  display: inline-block;
+  vertical-align: middle;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+.supernova {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+}
+.supernova {
+  background-image: none;
+  background-image: url("https://www.jotform.com/uploads/Smsilly/form_files/4.5eb9d6f62a6ef9.47310013.jpg");
+}
+#stage {
+  background-image: none;
+  background-image: url("https://www.jotform.com/uploads/Smsilly/form_files/4.5eb9d6f62a6ef9.47310013.jpg");
+}
+/* | */
+.form-all {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-repeat: repeat;
+}
+.form-header-group {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+}
+.form-line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-line {
+  padding: 3px 25px;
+}
+.form-all {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.form-section:first-child {
+  -webkit-border-radius: 0px 0px 0 0;
+  -moz-border-radius: 0px 0px 0 0;
+  border-radius: 0px 0px 0 0;
+}
+.form-section:last-child {
+  -webkit-border-radius: 0 0 0px 0px;
+  -moz-border-radius: 0 0 0px 0px;
+  border-radius: 0 0 0px 0px;
+}
+.form-all .qq-upload-button,
+.form-all .form-submit-button,
+.form-all .form-submit-reset,
+.form-all .form-submit-print {
+  font-size: 1em;
+  padding: 9px 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  font-size: 1em;
+  padding: 9px 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+/*
+& when ( @buttonFontType = google ) {
+	@import (css) "@{buttonFontLink}";
+}
+*/
+h2.form-header {
+  line-height: 1.618em;
+  font-size: 1.714em;
+}
+h2 ~ .form-subHeader {
+  line-height: 1.5em;
+  font-size: 1.071em;
+}
+.form-header-group {
+  text-align: left;
+}
+.form-line {
+  zoom: 1;
+}
+.form-line:before,
+.form-line:after {
+  display: table;
+  content: '';
+  line-height: 0;
+}
+.form-line:after {
+  clear: both;
+}
+.form-captcha input,
+.form-spinner input {
+  width: 372px;
+}
+.form-textbox,
+.form-textarea {
+  width: 100%;
+  max-width: 372px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-input,
+.form-address-table,
+.form-matrix-table {
+  width: 100%;
+  max-width: 372px;
+}
+.form-radio-item,
+.form-checkbox-item {
+  width: 100%;
+  max-width: 372px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-textbox.form-radio-other-input,
+.form-textbox.form-checkbox-other-input {
+  width: 80%;
+  margin-left: 3%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-multiple-column {
+  width: 100%;
+}
+.form-multiple-column .form-radio-item,
+.form-multiple-column .form-checkbox-item {
+  width: 10%;
+}
+.form-multiple-column[data-columncount="1"] .form-radio-item,
+.form-multiple-column[data-columncount="1"] .form-checkbox-item {
+  width: 100%;
+}
+.form-multiple-column[data-columncount="2"] .form-radio-item,
+.form-multiple-column[data-columncount="2"] .form-checkbox-item {
+  width: 50%;
+}
+.form-multiple-column[data-columncount="3"] .form-radio-item,
+.form-multiple-column[data-columncount="3"] .form-checkbox-item {
+  width: 33.33333333%;
+}
+.form-multiple-column[data-columncount="4"] .form-radio-item,
+.form-multiple-column[data-columncount="4"] .form-checkbox-item {
+  width: 25%;
+}
+.form-multiple-column[data-columncount="5"] .form-radio-item,
+.form-multiple-column[data-columncount="5"] .form-checkbox-item {
+  width: 20%;
+}
+.form-multiple-column[data-columncount="6"] .form-radio-item,
+.form-multiple-column[data-columncount="6"] .form-checkbox-item {
+  width: 16.66666667%;
+}
+.form-multiple-column[data-columncount="7"] .form-radio-item,
+.form-multiple-column[data-columncount="7"] .form-checkbox-item {
+  width: 14.28571429%;
+}
+.form-multiple-column[data-columncount="8"] .form-radio-item,
+.form-multiple-column[data-columncount="8"] .form-checkbox-item {
+  width: 12.5%;
+}
+.form-multiple-column[data-columncount="9"] .form-radio-item,
+.form-multiple-column[data-columncount="9"] .form-checkbox-item {
+  width: 11.11111111%;
+}
+[data-type="control_dropdown"] .form-dropdown {
+  width: 100% !important;
+  max-width: 372px;
+}
+[data-type="control_fullname"] .form-sub-label-container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 48%;
+}
+[data-type="control_fullname"] .form-sub-label-container:first-child {
+  margin-right: 4%;
+}
+[data-type="control_phone"] .form-sub-label-container {
+  width: 62.5%;
+  margin-left: 2.5%;
+  margin-right: 0;
+  float: left;
+  position: relative;
+}
+[data-type="control_phone"] .form-sub-label-container:first-child {
+  width: 32.5%;
+  margin-right: 2.5%;
+  margin-left: 0;
+}
+[data-type="control_phone"] .form-sub-label-container:first-child [data-component=areaCode] {
+  width: 93%;
+  float: left;
+}
+[data-type="control_phone"] .form-sub-label-container:first-child [data-component=areaCode] ~ .form-sub-label {
+  display: inline-block;
+}
+[data-type="control_phone"] .form-sub-label-container:first-child .phone-separate {
+  position: absolute;
+  top: 0;
+  right: -16%;
+  width: 24%;
+  text-align: center;
+  text-indent: -4px;
+}
+[data-type="control_birthdate"] .form-sub-label-container {
+  width: 22%;
+  margin-right: 3%;
+}
+[data-type="control_birthdate"] .form-sub-label-container:first-child {
+  width: 50%;
+}
+[data-type="control_birthdate"] .form-sub-label-container:last-child {
+  margin-right: 0;
+}
+[data-type="control_birthdate"] .form-sub-label-container .form-dropdown {
+  width: 100%;
+}
+[data-type="control_payment"] .form-sub-label-container {
+  width: auto;
+}
+[data-type="control_payment"] .form-sub-label-container .form-dropdown {
+  width: 100%;
+}
+.form-address-table td .form-dropdown {
+  width: 100%;
+}
+.form-address-table td .form-sub-label-container {
+  width: 96%;
+}
+.form-address-table td:last-child .form-sub-label-container {
+  margin-left: 4%;
+}
+.form-address-table td[colspan="2"] .form-sub-label-container {
+  width: 100%;
+  margin: 0;
+}
+/*.form-dropdown,
+.form-radio-item,
+.form-checkbox-item,
+.form-radio-other-input,
+.form-checkbox-other-input,*/
+.form-captcha input,
+.form-spinner input,
+.form-error-message {
+  padding: 4px 3px 2px 3px;
+}
+.form-header-group {
+  font-family: "Oswald", sans-serif;
+}
+.form-section {
+  padding: 0px 0px 0px 0px;
+}
+.form-header-group {
+  margin: 12px 36px 12px 36px;
+}
+.form-header-group {
+  padding: 24px 0px 24px 0px;
+}
+.form-textbox,
+.form-textarea {
+  padding: 4px 3px 2px 3px;
+}
+.form-textbox,
+.form-textarea,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+  background-color: #ffffff;
+}
+.form-textbox,
+.form-textarea {
+  width: 100%;
+  max-width: 372px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[data-type="control_textbox"] .form-input,
+[data-type="control_textarea"] .form-input,
+[data-type="control_fullname"] .form-input,
+[data-type="control_phone"] .form-input,
+[data-type="control_datetime"] .form-input,
+[data-type="control_address"] .form-input,
+[data-type="control_email"] .form-input,
+[data-type="control_passwordbox"] .form-input,
+[data-type="control_autocomp"] .form-input,
+[data-type="control_textbox"] .form-input-wide,
+[data-type="control_textarea"] .form-input-wide,
+[data-type="control_fullname"] .form-input-wide,
+[data-type="control_phone"] .form-input-wide,
+[data-type="control_datetime"] .form-input-wide,
+[data-type="control_address"] .form-input-wide,
+[data-type="control_email"] .form-input-wide,
+[data-type="control_passwordbox"] .form-input-wide,
+[data-type="control_autocomp"] .form-input-wide {
+  width: 100%;
+  max-width: 372px;
+}
+[data-type="control_fullname"] .form-sub-label-container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 48%;
+  margin-right: 0;
+  float: left;
+}
+[data-type="control_fullname"] .form-sub-label-container:first-child {
+  margin-right: 4%;
+}
+[data-type="control_phone"] .form-sub-label-container {
+  width: 62.5%;
+  margin-left: 2.5%;
+  margin-right: 0;
+  float: left;
+  position: relative;
+}
+[data-type="control_phone"] .form-sub-label-container:first-child {
+  width: 32.5%;
+  margin-right: 2.5%;
+  margin-left: 0;
+}
+[data-type="control_phone"] .form-sub-label-container:first-child [data-component=areaCode] {
+  width: 93%;
+  float: left;
+}
+[data-type="control_phone"] .form-sub-label-container:first-child [data-component=areaCode] ~ .form-sub-label {
+  display: inline-block;
+}
+[data-type="control_phone"] .form-sub-label-container:first-child .phone-separate {
+  position: absolute;
+  top: 0;
+  right: -16%;
+  width: 24%;
+  text-align: center;
+  text-indent: -4px;
+}
+[data-type="control_phone"] .form-sub-label-container .date-separate {
+  visibility: hidden;
+}
+.form-matrix-table {
+  width: 100%;
+  max-width: 372px;
+}
+.form-address-table {
+  width: 100%;
+  max-width: 372px;
+}
+.form-address-table td .form-dropdown {
+  width: 100%;
+}
+.form-address-table td .form-sub-label-container {
+  width: 96%;
+}
+.form-address-table td:last-child .form-sub-label-container {
+  margin-left: 4%;
+}
+.form-address-table td[colspan="2"] .form-sub-label-container {
+  width: 100%;
+  margin: 0;
+}
+[data-type="control_dropdown"] .form-input,
+[data-type="control_birthdate"] .form-input,
+[data-type="control_time"] .form-input,
+[data-type="control_dropdown"] .form-input-wide,
+[data-type="control_birthdate"] .form-input-wide,
+[data-type="control_time"] .form-input-wide {
+  width: 100%;
+  max-width: 372px;
+}
+[data-type="control_dropdown"] .form-dropdown {
+  width: 100% !important;
+  max-width: 372px;
+}
+[data-type="control_birthdate"] .form-sub-label-container {
+  width: 22%;
+  margin-right: 3%;
+}
+[data-type="control_birthdate"] .form-sub-label-container:first-child {
+  width: 50%;
+}
+[data-type="control_birthdate"] .form-sub-label-container:last-child {
+  margin-right: 0;
+}
+[data-type="control_birthdate"] .form-sub-label-container .form-dropdown {
+  width: 100%;
+}
+.form-label {
+  margin-bottom: 2px;
+  margin-right: 0;
+}
+.form-label {
+  font-family: "Oswald", sans-serif;
+}
+li[data-type="control_image"] div {
+  text-align: left;
+}
+li[data-type="control_image"] img {
+  border: none;
+  border-width: 0px !important;
+  border-style: solid !important;
+  border-color: false !important;
+}
+.form-line-column {
+  width: auto;
+}
+.form-line-error {
+  overflow: hidden;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #fff4f4;
+}
+.form-line-error .form-error-message {
+  background-color: rgba(225, 83, 125, 0.8);
+  clear: both;
+  float: none;
+}
+.form-line-error .form-error-message .form-error-arrow {
+  border-bottom-color: rgba(225, 83, 125, 0.8);
+}
+.form-line-error input:not(#coupon-input),
+.form-line-error textarea,
+.form-line-error .form-validation-error {
+  border: 1px solid rgba(225, 83, 125, 0.8);
+  -webkit-box-shadow: 0 0 3px rgba(225, 83, 125, 0.8);
+  -moz-box-shadow: 0 0 3px rgba(225, 83, 125, 0.8);
+  box-shadow: 0 0 3px rgba(225, 83, 125, 0.8);
+}
+.form-all {
+  position: relative;
+}
+.form-all:before {
+  content: "";
+  background-image: url("https://www.jotform.com/uploads/Smsilly/form_files/12.jpg");
+  display: inline-block;
+  height: 332px;
+  position: absolute;
+  background-size: 800px 332px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.form-all {
+  margin-top: 342px !important;
+}
+.form-all:before {
+  top: -342px;
+  background-position: top center;
+}
+.ie-8 .form-all {
+  margin-top: auto;
+  margin-top: initial;
+}
+.ie-8 .form-all:before {
+  display: none;
+}
+[data-type="control_clear"] {
+  display: none;
+}
+/* | */
+@media screen and (max-width: 480px), screen and (max-device-width: 767px) and (orientation: portrait), screen and (max-device-width: 415px) and (orientation: landscape) {
+  .testOne {
+    letter-spacing: 0;
+  }
+  .form-all {
+    border: 0;
+    max-width: initial;
+  }
+  .form-sub-label-container {
+    width: 100%;
+    margin: 0;
+    margin-right: 0;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  span.form-sub-label-container + span.form-sub-label-container {
+    margin-right: 0;
+  }
+  .form-sub-label {
+    white-space: normal;
+  }
+  .form-address-table td,
+  .form-address-table th {
+    padding: 0 1px 10px;
+  }
+  .form-submit-button,
+  .form-submit-print,
+  .form-submit-reset {
+    width: 100%;
+    margin-left: 0!important;
+  }
+  div[id*=at_] {
+    font-size: 14px;
+    font-weight: 700;
+    height: 8px;
+    margin-top: 6px;
+  }
+  .showAutoCalendar {
+    width: 20px;
+  }
+  img.form-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .form-matrix-row-headers {
+    width: 100%;
+    word-break: break-all;
+    min-width: 80px;
+  }
+  .form-collapse-table,
+  .form-header-group {
+    margin: 0;
+  }
+  .form-collapse-table {
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+  }
+  .form-collapse-hidden {
+    display: none !important;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .form-label {
+    width: 100% !important;
+  }
+  .form-label-left,
+  .form-label-right {
+    display: block;
+    float: none;
+    text-align: left;
+    width: auto!important;
+  }
+  .form-line,
+  .form-line.form-line-column {
+    padding: 2% 5%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: initial !important;
+  }
+  .form-radio-other-input,
+  .form-checkbox-other-input {
+    max-width: 55% !important;
+  }
+  .form-dropdown,
+  .form-textarea,
+  .form-textbox {
+    width: 100%!important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .form-input,
+  .form-input-wide,
+  .form-textarea,
+  .form-textbox,
+  .form-dropdown {
+    max-width: initial!important;
+  }
+  .form-checkbox-item:not(#foo),
+  .form-radio-item:not(#foo) {
+    width: 100%;
+  }
+  .form-address-city,
+  .form-address-line,
+  .form-address-postal,
+  .form-address-state,
+  .form-address-table,
+  .form-address-table .form-sub-label-container,
+  .form-address-table select,
+  .form-input {
+    width: 100%;
+  }
+  div.form-header-group {
+    padding: 24px 0px !important;
+    margin: 0 12px 2% !important;
+    margin-left: 5%!important;
+    margin-right: 5%!important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  div.form-header-group.hasImage img {
+    max-width: 100%;
+  }
+  [data-type="control_button"] {
+    margin-bottom: 0 !important;
+  }
+  [data-type=control_fullname] .form-sub-label-container {
+    width: 48%;
+  }
+  [data-type=control_fullname] .form-sub-label-container:first-child {
+    margin-right: 4%;
+  }
+  [data-type=control_phone] .form-sub-label-container {
+    width: 65%;
+    margin-right: 0;
+    margin-left: 0;
+    float: left;
+  }
+  [data-type=control_phone] .form-sub-label-container:first-child {
+    width: 31%;
+    margin-right: 4%;
+  }
+  [data-type=control_datetime] .allowTime-container {
+    width: 100%;
+  }
+  [data-type=control_datetime] .allowTime-container .form-sub-label-container {
+    width: 24%!important;
+    margin-left: 6%;
+    margin-right: 0;
+  }
+  [data-type=control_datetime] .allowTime-container .form-sub-label-container:first-child {
+    margin-left: 0;
+  }
+  [data-type=control_datetime] span + span + span > span:first-child {
+    display: block;
+    width: 100% !important;
+  }
+  [data-type=control_birthdate] .form-sub-label-container,
+  [data-type=control_time] .form-sub-label-container {
+    width: 27.3%!important;
+    margin-right: 6% !important;
+  }
+  [data-type=control_time] .form-sub-label-container:last-child {
+    width: 33.3%!important;
+    margin-right: 0 !important;
+  }
+  .form-pagebreak-back-container,
+  .form-pagebreak-next-container {
+    min-height: 1px;
+    width: 50% !important;
+  }
+  .form-pagebreak-back,
+  .form-pagebreak-next,
+  .form-product-item.hover-product-item {
+    width: 100%;
+  }
+  .form-pagebreak-back-container {
+    padding: 0;
+    text-align: right;
+  }
+  .form-pagebreak-next-container {
+    padding: 0;
+    text-align: left;
+  }
+  .form-pagebreak {
+    margin: 0 auto;
+  }
+  .form-buttons-wrapper {
+    margin: 0!important;
+    margin-left: 0!important;
+  }
+  .form-buttons-wrapper button {
+    width: 100%;
+  }
+  .form-buttons-wrapper .form-submit-print {
+    margin: 0 !important;
+  }
+  table {
+    width: 100%!important;
+    max-width: initial!important;
+  }
+  table td + td {
+    padding-left: 3%;
+  }
+  .form-checkbox-item,
+  .form-radio-item {
+    white-space: normal!important;
+  }
+  .form-checkbox-item input,
+  .form-radio-item input {
+    width: auto;
+  }
+  .form-collapse-table {
+    margin: 0 5%;
+    display: block;
+    zoom: 1;
+    width: auto;
+  }
+  .form-collapse-table:before,
+  .form-collapse-table:after {
+    display: table;
+    content: '';
+    line-height: 0;
+  }
+  .form-collapse-table:after {
+    clear: both;
+  }
+  .fb-like-box {
+    width: 98% !important;
+  }
+  .form-error-message {
+    clear: both;
+    bottom: -10px;
+  }
+  .date-separate,
+  .phone-separate {
+    display: none;
+  }
+  .custom-field-frame,
+  .direct-embed-widgets,
+  .signature-pad-wrapper {
+    width: 100% !important;
+  }
+}
+/* | */
+
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Oswald, sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: Oswald, sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: Oswald, sans-serif;
+    }
+    .form-header-group {
+      font-family: Oswald, sans-serif;
+    }
+    .form-label {
+      font-family: Oswald, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .form-all {
+      max-width: 800px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 80px;
+    }
+  
+    .form-all {
+      font-size: 14px
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 14px
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 14px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: rgba(255,255,255,0.49);
+    }
+  
+    .form-all {
+      color: #4a4a4a;
+    }
+    .form-header-group .form-header {
+      color: #4a4a4a;
+    }
+    .form-header-group .form-subHeader {
+      color: #4a4a4a;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label {
+      color: #4a4a4a;
+    }
+    .form-sub-label {
+      color: #646464;
+    }
+  
+    .supernova {
+      background-color: #f5f5f5;
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+      .supernova {
+        height: 100%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+      }
+      .supernova {
+        background-image: url("https://www.jotform.com/uploads/Smsilly/form_files/4.5eb9d6f62a6ef9.47310013.jpg");
+      }
+      #stage {
+        background-image: url("https://www.jotform.com/uploads/Smsilly/form_files/4.5eb9d6f62a6ef9.47310013.jpg");
+      }
+    
+    .form-all {
+      background-image: none;
+    }
+  
+    .form-all {
+      position: relative;
+    }
+    .form-all:before {
+      content: "";
+      background-image: url("https://www.jotform.com/uploads/Smsilly/form_files/12.6037ff4cbc3912.24226499.jpg");
+      display: inline-block;
+      height: 331px;
+      position: absolute;
+      background-size: 800px 331px;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+    .form-all {
+      margin-top: 341px !important;
+    }
+    .form-all:before {
+      top: -341px;
+      background-position: top center;
+    }
+           
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+  
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/201316835557154/" method="post" enctype="multipart/form-data" name="form_201316835557154" id="201316835557154" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="201316835557154" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_3" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_3" class="form-header" data-component="header">
+              Online Booking and Inquiries
+            </h2>
+            <div id="subHeader_3" class="form-subHeader">
+              Please complete the form below. This information will help assist me in giving you the best possible quote.
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_4">
+        <div id="cid_4" class="form-input-wide">
+          <div id="text_4" class="form-html" data-component="text">
+            <p><span style="font-size: 14pt;"><strong>PLEASE READ BEFORE PROCEEDING</strong></span></p>
+            <p><em><span style="font-size: 14pt;">I am a home baker with a licensed and insured private custom cake studio. I do not permit any clients in the studio due to health precautions, therefore all orders are completed via email, calls or text. When picking up your order, we supply curbside. The address will be listed on your invoice for convenience. </span></em></p>
+            <p> </p>
+            <ul>
+              <li>
+                <span style="font-size: medium;">
+                  I am a
+                  <em>CAKE</em>
+                  decorator and specialize in custom cakes. If you wish to order additional items, you must purchase a cake.
+                  <em> For example, I will not be able to accommodate <span style="text-decoration: underline;">ONLY</span> cupcake orders without a cake purchase.  </em>
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span style="font-size: medium;">
+                  If you are purchasing a cake from another vendor and wish to purchase other edibles from Sprinkle Me Silly, that will not be permitted.
+                  <em>Due to insurance and health issues or other problems that could arise, SMS prefers to not mix vendors.</em>
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span style="font-size: medium;">
+                  When inquiring about pricing, I do have a minimum of
+                  <em><strong>$165</strong></em>
+                    that must be met in order for me to schedule the order.
+                  <br />
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span style="font-size: medium;">
+                  I no longer offer cookies, but will gladly give you a referral.
+                  <br />
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span style="font-size: medium;">
+                  We generally need a 2 week notice for most orders, however we do try and accommodate those last minute orders if possible.
+                  <br />
+                </span>
+              </li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_164">
+        <div id="cid_164" class="form-input-wide">
+          <div id="text_164" class="form-html" data-component="text">
+            <p><span style="font-size: 18pt;"><span style="font-size: 14pt;">Check to see if your date is available. Whichever date/time you choose for PICKUP, please note that we expect you to be on time. If you do not show up at the time chosen, you may forfeit your cake AND all monies.</span></span></p>
+            <p> </p>
+            <p><span style="font-size: 18pt;"><span style="font-size: 12pt;"><em><strong>** If the date is grayed out or not selectable, the date sadly is not available and I am fully booked. I do not take orders for weekdays, weekends only**</strong> </em></span><strong><br /></strong></span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required allowTime" data-type="control_datetime" id="id_22">
+        <label class="form-label form-label-top" id="label_22" for="lite_mode_22">
+          Requested pickup/delivery date &amp; time
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_22" class="form-input-wide jf-required">
+          <div data-wrapper-react="true" class="extended">
+            <div style="display:none">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_22" name="q22_requestedPickupdelivery[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_22 sublabel_22_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_22" id="sublabel_22_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="day_22" name="q22_requestedPickupdelivery[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_22 sublabel_22_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_22" id="sublabel_22_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_22" name="q22_requestedPickupdelivery[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="off" aria-labelledby="label_22 sublabel_22_year" />
+                <label class="form-sub-label" for="year_22" id="sublabel_22_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_22" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" autoComplete="off" aria-labelledby="label_22 sublabel_22_litemode" />
+              <img class="showAutoCalendar newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_22_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="Yes" data-version="v1" />
+              <label class="form-sub-label" for="lite_mode_22" id="sublabel_22_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+            <span class="allowTime-container">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <select class="time-dropdown form-dropdown validate[required, limitDate]" id="hour_22" name="q22_requestedPickupdelivery[hour]" aria-labelledby="label_22 sublabel_22_hour">
+                  <option>  </option>
+                  <option value="1"> 1 </option>
+                  <option value="2"> 2 </option>
+                  <option value="3"> 3 </option>
+                  <option value="4"> 4 </option>
+                  <option value="5"> 5 </option>
+                  <option value="6"> 6 </option>
+                  <option value="7"> 7 </option>
+                  <option value="8"> 8 </option>
+                  <option value="9"> 9 </option>
+                  <option value="10"> 10 </option>
+                  <option value="11"> 11 </option>
+                  <option value="12"> 12 </option>
+                </select>
+                <span class="date-separate" aria-hidden="true">
+                   :
+                </span>
+                <label class="form-sub-label" for="hour_22" id="sublabel_22_hour" style="min-height:13px" aria-hidden="false"> Hour </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <select class="time-dropdown form-dropdown validate[required, limitDate]" id="min_22" name="q22_requestedPickupdelivery[min]" aria-labelledby="label_22 sublabel_22_minutes">
+                  <option>  </option>
+                  <option value="00"> 00 </option>
+                  <option value="10"> 10 </option>
+                  <option value="20"> 20 </option>
+                  <option value="30"> 30 </option>
+                  <option value="40"> 40 </option>
+                  <option value="50"> 50 </option>
+                </select>
+                <label class="form-sub-label" for="min_22" id="sublabel_22_minutes" style="min-height:13px" aria-hidden="false"> Minutes </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <select class="time-dropdown form-dropdown validate[required, limitDate]" id="ampm_22" name="q22_requestedPickupdelivery[ampm]" aria-labelledby="label_22 sublabel_22_ampm">
+                  <option value="AM"> AM </option>
+                  <option selected="" value="PM"> PM </option>
+                </select>
+                <label class="form-sub-label" for="ampm_22" id="sublabel_22_ampm" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap" aria-hidden="false"> AM/PM Option </label>
+              </span>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_170">
+        <label class="form-label form-label-top form-label-auto" id="label_170" for="input_170">
+          Pickup or Delivery?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_170" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <select class="form-dropdown validate[required]" id="input_170" name="q170_pickupOr" style="width:150px" data-component="dropdown" required="">
+              <option value="">  </option>
+              <option selected="" value="Pickup"> Pickup </option>
+              <option value="Delivery"> Delivery </option>
+            </select>
+            <label class="form-sub-label" for="input_170" id="sublabel_input_170" style="min-height:13px" aria-hidden="false"> Delivery is $35 within Memphis city limits. For weddings, the fee will differ per location and preferences. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_172">
+        <label class="form-label form-label-top form-label-auto" id="label_172" for="input_172">
+          Is this a house or business?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_172" class="form-input-wide jf-required">
+          <select class="form-dropdown validate[required]" id="input_172" name="q172_isThis172" style="width:150px" data-component="dropdown" required="">
+            <option value="">  </option>
+            <option value="House"> House </option>
+            <option value="Business"> Business </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_address" id="id_171">
+        <label class="form-label form-label-top form-label-auto" id="label_171" for="input_171_addr_line1"> Delivery Address </label>
+        <div id="cid_171" class="form-input-wide">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_171_addr_line1" name="q171_deliveryAddress[addr_line1]" class="form-textbox form-address-line" value="" data-component="address_line_1" aria-labelledby="label_171 sublabel_171_addr_line1" required="" />
+                  <label class="form-sub-label" for="input_171_addr_line1" id="sublabel_171_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_171_addr_line2" name="q171_deliveryAddress[addr_line2]" class="form-textbox form-address-line" value="" data-component="address_line_2" aria-labelledby="label_171 sublabel_171_addr_line2" />
+                  <label class="form-sub-label" for="input_171_addr_line2" id="sublabel_171_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_171_city" name="q171_deliveryAddress[city]" class="form-textbox form-address-city" value="" data-component="city" aria-labelledby="label_171 sublabel_171_city" required="" />
+                  <label class="form-sub-label" for="input_171_city" id="sublabel_171_city" style="min-height:13px" aria-hidden="false"> City </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_171_state" name="q171_deliveryAddress[state]" class="form-textbox form-address-state" value="" data-component="state" aria-labelledby="label_171 sublabel_171_state" required="" />
+                  <label class="form-sub-label" for="input_171_state" id="sublabel_171_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_171_postal" name="q171_deliveryAddress[postal]" class="form-textbox form-address-postal" value="" data-component="zip" aria-labelledby="label_171 sublabel_171_postal" required="" />
+                  <label class="form-sub-label" for="input_171_postal" id="sublabel_171_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_169">
+        <div id="cid_169" class="form-input-wide">
+          <div aria-label="Divider" data-component="divider" style="border-bottom:1px solid #e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_fullname" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="first_5">
+          Your Name
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_5" name="q5_yourName[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_5 sublabel_5_first" required="" />
+              <label class="form-sub-label" for="first_5" id="sublabel_5_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_5" name="q5_yourName[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_5 sublabel_5_last" required="" />
+              <label class="form-sub-label" for="last_5" id="sublabel_5_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_radio" id="id_30">
+        <label class="form-label form-label-top" id="label_30" for="input_30">
+          What is your preference of communication?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_30" class="form-input-wide jf-required">
+          <div class="form-single-column" role="group" aria-labelledby="label_30" data-component="radio">
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" aria-describedby="label_30" class="form-radio validate[required]" id="input_30_0" name="q30_CommunicationPreference" value="Text" required="" />
+              <label id="label_input_30_0" for="input_30_0"> Text </label>
+            </span>
+            <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" aria-describedby="label_30" class="form-radio validate[required]" id="input_30_1" name="q30_CommunicationPreference" value="Email" required="" />
+              <label id="label_input_30_1" for="input_30_1"> Email </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_phone" id="id_7" data-compound-hint="123,456-7890">
+        <label class="form-label form-label-top" id="label_7" for="input_7_full">
+          Phone Number
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_7" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="tel" id="input_7_full" name="q7_phoneNumber7[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" autoComplete="off" data-masked="true" value="" placeholder="123,456-7890" data-component="phone" aria-labelledby="label_7" required="" />
+            <label class="form-sub-label" for="input_7_full" id="sublabel_7_masked" style="min-height:13px" aria-hidden="false">  </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_8">
+        <label class="form-label form-label-top" id="label_8" for="input_8">
+          E-mail Address
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_8" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_8" name="q8_Email" class="form-textbox validate[required, Email]" size="30" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_8 sublabel_input_8" required="" />
+            <br/>
+            <label class="form-sub-label" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap" for="input_8_confirm"> Confirmation Email </label>
+            <input type="email" id="input_8_confirm" name="q8_Email" class="form-textbox validate[required, Email, Email_Confirm]" style="margin-top:8px" size="30" value="" placeholder="Please retype your email." data-component="emailConfirmation" />
+            <label class="form-sub-label" for="input_8" id="sublabel_input_8" style="min-height:13px" aria-hidden="false"> Do not use .EDU or .GOV email addresses. Only general emails such as gmail, yahoo, aol, etc. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_167">
+        <label class="form-label form-label-top form-label-auto" id="label_167" for="input_167">
+          How did you hear about us?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_167" class="form-input-wide jf-required">
+          <select class="form-dropdown validate[required]" id="input_167" name="q167_howDid" style="width:150px" data-component="dropdown" required="">
+            <option value="">  </option>
+            <option value="Website"> Website </option>
+            <option value="Facebook"> Facebook </option>
+            <option value="Instagram"> Instagram </option>
+            <option value="Twitter"> Twitter </option>
+            <option value="Pinterest"> Pinterest </option>
+            <option value="Friend"> Friend </option>
+            <option value="Other"> Other </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_168">
+        <label class="form-label form-label-top form-label-auto" id="label_168" for="input_168"> If you selected friend or other, please let us know the source! </label>
+        <div id="cid_168" class="form-input-wide">
+          <input type="text" id="input_168" name="q168_typeA" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" aria-labelledby="label_168" />
+        </div>
+      </li>
+      <li id="cid_163" class="form-input-wide" data-type="control_pagebreak">
+        <div class="form-pagebreak" data-component="pagebreak">
+          <div class="form-pagebreak-back-container">
+            <button id="form-pagebreak-back_163" type="button" class="form-pagebreak-back  jf-form-buttons" data-component="pagebreak-back">
+              Back
+            </button>
+          </div>
+          <div class="form-pagebreak-next-container">
+            <button id="form-pagebreak-next_163" type="button" class="form-pagebreak-next  jf-form-buttons" data-component="pagebreak-next">
+              Next
+            </button>
+          </div>
+          <div class="form-pagebreak-next-container form-pagebreak-save-container">
+            <button id="input_scl_163" type="button" class="form-submit-button form-sacl-button js-new-sacl-button  jf-form-buttons sacl-button" data-component="button">
+              Save
+            </button>
+          </div>
+          <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_163">
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="form-section page-section" style="display:none;">
+      <li class="form-line" data-type="control_text" id="id_12">
+        <div id="cid_12" class="form-input-wide">
+          <div id="text_12" class="form-html" data-component="text">
+            <p><strong><span style="font-size: medium;">Event Information<br /></span></strong></p>
+            <hr />
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_23">
+        <label class="form-label form-label-top" id="label_23" for="input_23">
+          Event Type
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_23" class="form-input-wide jf-required">
+          <select class="form-dropdown validate[required]" id="input_23" name="q23_EventType" style="width:150px" data-component="dropdown" required="">
+            <option value="">  </option>
+            <option value="Birthday"> Birthday </option>
+            <option value="Wedding"> Wedding </option>
+            <option value="Baby Shower"> Baby Shower </option>
+            <option value="Anniversary"> Anniversary </option>
+            <option value="Graduation"> Graduation </option>
+            <option value="Holiday"> Holiday </option>
+            <option value="Gender Reveal"> Gender Reveal </option>
+            <option value="Just Because"> Just Because </option>
+            <option value="Bachelor/Bachelorette Party"> Bachelor/Bachelorette Party </option>
+            <option value="Special Occasion"> Special Occasion </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_textbox" id="id_24">
+        <label class="form-label form-label-top" id="label_24" for="input_24">
+          Theme
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_24" class="form-input-wide jf-required">
+          <input type="text" id="input_24" name="q24_Theme" data-type="input-textbox" class="form-textbox validate[required]" size="38" value="" data-component="textbox" aria-labelledby="label_24" required="" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_165">
+        <div id="cid_165" class="form-input-wide">
+          <div aria-label="Divider" data-component="divider" style="border-bottom:1px solid #e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_166">
+        <div id="cid_166" class="form-input-wide">
+          <div aria-label="Divider" data-component="divider" style="border-bottom:1px solid #e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_number" id="id_26">
+        <label class="form-label form-label-top" id="label_26" for="input_26">
+          Budget
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_26" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="number" id="input_26" name="q26_Budget" data-type="input-number" class=" form-number-input form-textbox validate[required]" style="width:340px" size="40" value="" data-component="number" aria-labelledby="label_26 sublabel_input_26" required="" step="any" />
+            <label class="form-sub-label" for="input_26" id="sublabel_input_26" style="min-height:13px" aria-hidden="false"> $165 minimum. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_number" id="id_25">
+        <label class="form-label form-label-top" id="label_25" for="input_25">
+          Servings
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_25" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="number" id="input_25" name="q25_Servings" data-type="input-number" class=" form-number-input form-textbox validate[required]" style="width:340px" size="40" value="" data-component="number" aria-labelledby="label_25 sublabel_input_25" required="" step="any" />
+            <label class="form-sub-label" for="input_25" id="sublabel_input_25" style="min-height:13px" aria-hidden="false"> This number does not have to be the exact amount. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_textbox" id="id_31">
+        <label class="form-label form-label-top" id="label_31" for="input_31"> Gallery ID Number </label>
+        <div id="cid_31" class="form-input-wide">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="text" id="input_31" name="q31_GalleryIDNumber" data-type="input-textbox" class="form-textbox" size="10" value="" data-component="textbox" aria-labelledby="label_31 sublabel_input_31" />
+            <label class="form-sub-label" for="input_31" id="sublabel_input_31" style="min-height:13px" aria-hidden="false"> Instead of uploading an image, you can easily reference an item you are most interested in via our Gallery by listing the ID number located on the picture by hovering or clicking the image. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textarea" id="id_20">
+        <label class="form-label form-label-top" id="label_20" for="input_20">
+          Order Notes
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_20" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <textarea id="input_20" class="form-textarea validate[required]" name="q20_OrderNotes" cols="800" rows="4" data-component="textarea" required="" aria-labelledby="label_20 sublabel_input_20"></textarea>
+            <label class="form-sub-label" for="input_20" id="sublabel_input_20" style="min-height:13px" aria-hidden="false"> Please be precise with colors IE: dark blue, light blue, Teal, etc. you can also upload swatch examples. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_174">
+        <label class="form-label form-label-top form-label-auto" id="label_174" for="input_174"> Cake Flavors </label>
+        <div id="cid_174" class="form-input-wide">
+          <textarea id="input_174" class="form-textarea" name="q174_CakeFlavors" cols="40" rows="6" data-component="textarea" aria-labelledby="label_174"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_173">
+        <label class="form-label form-label-top form-label-auto" id="label_173" for="input_173"> If you have a discount code, please enter it below. </label>
+        <div id="cid_173" class="form-input-wide">
+          <input type="text" id="input_173" name="q173_DiscountCode" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" aria-labelledby="label_173" />
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_fileupload" id="id_27">
+        <label class="form-label form-label-top" id="label_27" for="input_27"> Upload Images </label>
+        <div id="cid_27" class="form-input-wide">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <div class="qq-uploader-buttonText-value">
+                Upload Image
+              </div>
+              <input type="file" id="input_27" name="q27_input27[]" multiple="" class="form-upload-multiple" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="0" data-file-minsize="0" data-file-limit="4" data-component="fileupload" />
+              <label class="form-sub-label" for="input_27" style="min-height:13px" aria-hidden="false"> Please share any images pertaining to the design you are looking for. </label>
+            </span>
+            <span style="display:none" class="cancelText">
+              Cancel
+            </span>
+            <span style="display:none" class="ofText">
+              of
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_158">
+        <div id="cid_158" class="form-input-wide">
+          <div id="text_158" class="form-html" data-component="text">
+            <p style="text-align: center;"><span style="font-size: 14pt;">We appreciate you taking the time to complete our online inquiry form and we look forward to working with you!</span></p>
+            <p style="text-align: center;"> <span style="font-size: 12pt;">Make sure to follow us on Facebook, Twitter and Instagram!<br /></span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_widget" id="id_159">
+        <div id="cid_159" class="form-input-wide">
+          <div data-widget-name="Social Follow" style="width:100%;text-align:Center;overflow-x:auto" data-component="widget-field">
+            <iframe data-client-id="529260f705a7114f70000008" title="Social Follow" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_159" src="" style="max-width:200px;border:none;width:100%;height:40px" data-width="200" data-height="40">
+            </iframe>
+            <div class="widget-inputs-wrapper">
+              <input type="hidden" id="input_159" class="form-hidden form-widget  " name="q159_input159" value="" />
+              <input type="hidden" id="widget_settings_159" class="form-hidden form-widget-settings" value="%5B%7B%22name%22%3A%22facebook%22%2C%22value%22%3A%22https%3A%2F%2Fwww.facebook.com%2FSprinkleMeSillycakes%22%7D%2C%7B%22name%22%3A%22twitter%22%2C%22value%22%3A%22https%3A%2F%2Ftwitter.com%2Fsprinklemesilly%22%7D%2C%7B%22name%22%3A%22instagram%22%2C%22value%22%3A%22https%3A%2F%2Fwww.instagram.com%2Fsprinklemesillycakes%22%7D%5D" data-version="2" />
+            </div>
+            <script type="text/javascript">
+            setTimeout(function()
+{
+  var _cFieldFrame = document.getElementById("customFieldFrame_159");
+  if (_cFieldFrame)
+  {
+    _cFieldFrame.onload = function()
+    {
+      if (typeof widgetFrameLoaded !== 'undefined')
+      {
+        widgetFrameLoaded(159, {
+          "formID": 201316835557154
+        })
+      }
+    };
+    _cFieldFrame.src = "//widgets.jotform.io/socialFollow/?qid=159&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+    _cFieldFrame.addClassName("custom-field-frame-rendered");
+  }
+}, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_160">
+        <div id="cid_160" class="form-input-wide">
+          <div style="text-align:left" data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+            <button id="input_scl_160" type="button" class="form-submit-button form-sacl-button js-new-sacl-button  jf-form-buttons sacl-button" data-component="button">
+              Save
+            </button>
+            <button id="input_160" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="clear:both">
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "0";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by JotForm";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="201316835557154" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='201316835557154'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "201316835557154-201316835557154";
+}
+  </script>
+</form>
+<script type="text/javascript">window.GOOGLE_SIGNON = "172124630376-qk1qmdfmur2ojaf39e070iqhpt2foaip.apps.googleusercontent.com"</script>
+<script type="text/javascript">window.FACEBOOK_SIGNON_APP_ID = "1140740696088074"</script>
+<script>window.JotFormAPIEndpoint = "https://api.jotform.com"; </script>
+<script>window.___JFsclActive = true; </script>
+<script>window.JFForm = { id: '201316835557154', skippable: true, isHipaa: '' };</script> 
+<script src="https://cdn.jotfor.ms//common/FormUserScripts.js"></script>
